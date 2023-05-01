@@ -1,0 +1,29 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    margin: -1px;
+}
+
+.sc-news .link-all,
+.footer .group-cutomer::before,
+.sc-board .link-more::before,
+.header .search-area .btn-submit::after,
+.header .logo a::after{
+    background: url('../images/sp-common.png') no-repeat;
+}
+
+.sc-service .group-title .more-area .link-story::before,
+.sc-service .group-title .more-area .link-festival::before{
+    background-image: url('../images/event-logo.png');
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+
+
+.group-sns .headline::after,
+.group-sns .sns-item a::before{
+    background: url('../images/sns-1.png') no-repeat;
+}

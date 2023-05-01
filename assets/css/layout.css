@@ -1,0 +1,449 @@
+@import './reset.css';
+@import './common.css';
+
+
+.wrapper{
+    min-width: 1316px;
+}
+.skip-nav{
+    position: relative;
+}
+.skip-nav a{
+    position: absolute;
+    top: -30px;
+    line-height: 30px;
+    background: #ccc;
+}
+.skip-nav a:focus,
+.skip-nav a:active{
+    top: 0;
+}
+
+
+.common-inner{
+    width: 1152px;
+    margin: 0 auto;
+}
+.header{
+    position: relative;
+}
+.header .inner1{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 1152px;
+    margin: 0 auto;
+}
+.header .logo-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.header .logo a{
+    display: block;
+    width: 105px;
+    height: 27px;
+}
+.header .logo a::after{
+    display: inline-block;
+    width: 105px;
+    height: 27px;
+    background-position: -5px -165px;
+    vertical-align: top;
+    content: '';
+}
+.gnb{}
+.gnb .nav-list{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 167px;
+}
+.gnb .nav-item{}
+.gnb .nav{
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.gnb .nav:hover{
+    color: #2292e9;
+}
+.header .service-area{
+    display: flex;
+}
+.header .service-area a{
+    height: 48px;
+    padding: 0 10px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.header .service-area a:hover{
+    color: #2292e9;
+}
+.header .link-login{}
+.header .link-mySeoul{}
+.header .link-email{}
+
+
+
+
+.header .inner2{
+    display: flex;
+    position: relative;
+    height: 120px;
+}
+.header .slogan-area{
+    position: absolute;
+    margin: 38px 0 30px;
+}
+.header .slogan-area a{
+    display: block;
+    width: 133px;
+    height: 51px;
+}
+.header .slogan-area a::after{
+    display: inline-block;
+    width: 133px;
+    height: 51px;
+    background: url('../images/seoul.png') no-repeat 0 0;
+    vertical-align: top;
+    content: '';
+}
+
+.header .search-area{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 520px;
+    height: 42px;
+    margin-left: -326px;
+    border: 3px solid #2292e9;
+}
+.header .search-area .blue-bd{
+    position: relative;
+    color: #767676;;
+}
+
+.header .search-area .input-text{
+    width: calc(100% - 42px);
+    border: 0;
+    padding: 0 10px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+}
+.header .search-area .input-text::placeholder{
+    color: #2292e9;
+}
+.header .search-area .btn-keyboard{
+    position: absolute;
+    top: 12px;
+    right: 42px;
+    width: 29px;
+    height: 16px;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+.header .search-area .btn-keyboard::after{
+    display: inline-block;
+    width: 29px;
+    height: 16px;
+    background: url('../images/btn-keyboard.png') no-repeat 0 0;
+    vertical-align: top;
+    content: '';
+}
+.header .search-area .btn-submit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+}
+.header .search-area .btn-submit::after{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-position: -32px -97px;
+    vertical-align: top;
+    content: '';
+}
+
+
+.header .weather-area{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 85px;
+    margin-top: 34px;
+}
+.header .weather-area img{
+    margin-top: 4px;
+    margin-left: 3px;
+}
+.header .desc-wrap{
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: top;
+}
+.header .temp-box{}
+.header .temp-box .temp{
+    font-size: 25px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.header .temp-box .desc{
+    font-size: 16px;
+    letter-spacing: -0.1em;
+}
+.header .dust-box{
+    font-size: 13px;
+    margin-top: 7px;
+}
+.header .dust-box .normal{
+    color: #009944;
+    margin-left: 2px;
+}
+.header .dust-box .good{
+    color: #0068b7;
+    margin-left: 2px;
+}
+
+
+.header .inner2 .lang-area{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 21px;
+}
+.header .lang-area .select-lang{
+    width: 80px;
+    height: 21px;
+    border: 1px solid #afcfea;
+    padding: 0 0 0 2px;
+    color: #1E6CB3;
+    font-size: 12px;
+    line-height: 21px;
+    appearance: none;
+    background: url('../images/ic-arrow-lang.png') no-repeat 96% center / 8px auto;
+}
+.header .lang-area option{
+    text-align: left;
+}
+.header .lang-area .btn-lang{
+    width: 30px;
+    height: 21px;
+    padding: 0;
+    background: #1E6CB3;
+    color: #fff;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+.footer{}
+.footer .group-link{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.footer .corp-area{}
+.footer .corp-list{
+    display: flex;
+    padding: 15px 0;
+    margin-top: 20px;
+    color: #636363;
+    font-size: 12px;
+}
+.footer .corp-item{
+    position: relative;
+    padding: 0 10px;
+}
+.footer .corp-item:first-child{
+    padding-left: 0;
+}
+.footer .corp-list li+li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 14px;
+    margin-top: -6px;
+    background: #dcdcdc;
+}
+.footer .corp-item:nth-child(2){
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+.footer .sns-area{}
+.footer .sns-list{
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -4px;
+}
+.footer .sns-item a{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.footer .sns-item a::before{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('../images/sns-2.png') no-repeat;
+    vertical-align: top;
+    content: '';
+}
+.footer .sns-item .ic-facebook::before{
+    background-position: -25px 0;
+}
+.footer .sns-item .ic-twitter::before{
+    background-position: -50px 0;
+}
+.footer .sns-item .ic-instar::before{
+    background-position: -75px 0;
+}
+.footer .sns-item .ic-story::before{
+    background-position: -100px 0;
+}
+.footer .sns-item .ic-youtube::before{
+    background-position: -125px 0;
+}
+.footer .sns-item .ic-blog::before{
+    background-position: -150px 0;
+}
+
+.footer .sns-item .ic-facebook:hover::before{
+    background-position: -25px -25px;
+}
+.footer .sns-item .ic-twitter:hover::before{
+    background-position: -50px -25px;
+}
+.footer .sns-item .ic-instar:hover::before{
+    background-position: -75px -25px;
+}
+.footer .sns-item .ic-story:hover::before{
+    background-position: -100px -25px;
+}
+.footer .sns-item .ic-youtube:hover::before{
+    background-position: -125px -25px;
+}
+.footer .sns-item .ic-blog:hover::before{
+    background-position: -150px -25px;
+}
+
+
+
+.footer .group-info{
+    display: flex;
+    gap: 40px;
+    position: relative;
+    border-top: 1px solid #ccc;
+    padding: 22px 0;
+}
+.footer .cutomer-area{
+    width: 108px;
+    height: 45px;
+}
+.footer .cutomer-area::before{
+    display: inline-block;
+    width: 108px;
+    height: 45px;
+    background: url('../images/sp-common.png');
+    background-position: -180px 0;
+    vertical-align: top;
+    content: '';
+}
+
+
+.footer .addr-area .addr-box{
+    display: flex;
+    gap: 4px;
+}
+.footer .addr-area p{
+    font-size: 12px;
+    padding-bottom: 2px;
+    color: #636363;
+}
+.footer .addr-area .map{
+    margin-top: 1px;
+    font-size: 11px;
+    font-weight: 400;
+}
+.footer .addr-area .copy{
+    font-size: 11px;
+}
+.footer .mark-area{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.footer .mark-area .mark-1{
+    display: block;
+    width: 79px;
+    height: 56px;
+}
+.footer .mark-area .mark-1 img{
+    width: 79px;
+    height: 56px;
+}
+.footer .mark-area .mark-2{
+    display: block;
+    width: 86px;
+    height: 56px;
+    margin-left: 14px;
+}
+.footer .mark-area .mark-2 img{
+    width: 86px;
+    height: 56px;
+}
+
+
+
+
+.fix-btn{
+    position: fixed;
+    bottom: 98px;
+    left: 50%;
+    margin-left: 600px;
+}
+.fix-btn .btn-top{
+    display: block;
+    width: 34px;
+    height: 34px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transform: translateY(300px);
+}
+.fix-btn .btn-top::after{
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: url('../images/btn-top.png') no-repeat 0 0;
+    vertical-align: top;
+    content: '';
+}
+.fix-btn .btn-top.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
