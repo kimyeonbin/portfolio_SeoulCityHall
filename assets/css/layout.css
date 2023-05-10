@@ -53,7 +53,6 @@
     vertical-align: top;
     content: '';
 }
-.gnb{}
 .gnb .nav-list{
     display: flex;
     gap: 20px;
@@ -61,7 +60,6 @@
     top: 0;
     left: 167px;
 }
-.gnb .nav-item{}
 .gnb .nav{
     height: 48px;
     line-height: 48px;
@@ -83,9 +81,6 @@
 .header .service-area a:hover{
     color: #2292e9;
 }
-.header .link-login{}
-.header .link-mySeoul{}
-.header .link-email{}
 
 
 
@@ -190,7 +185,6 @@
     margin-left: 5px;
     vertical-align: top;
 }
-.header .temp-box{}
 .header .temp-box .temp{
     font-size: 25px;
     margin-right: 10px;
@@ -251,13 +245,11 @@
 
 
 
-.footer{}
 .footer .group-link{
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-.footer .corp-area{}
 .footer .corp-list{
     display: flex;
     padding: 15px 0;
@@ -289,7 +281,6 @@
 }
 
 
-.footer .sns-area{}
 .footer .sns-list{
     display: flex;
     gap: 12px;
