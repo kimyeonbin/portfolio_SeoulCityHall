@@ -181,14 +181,12 @@
     margin-left: 3px;
 }
 .header .desc-wrap{
-    display: inline-block;
     margin-left: 5px;
-    vertical-align: top;
 }
 .header .temp-box .temp{
     font-size: 25px;
     margin-right: 10px;
-    font-weight: bold;
+    font-weight: 700;
 }
 .header .temp-box .desc{
     font-size: 16px;
@@ -197,6 +195,7 @@
 .header .dust-box{
     font-size: 13px;
     margin-top: 7px;
+    display: block;
 }
 .header .dust-box .normal{
     color: #009944;
