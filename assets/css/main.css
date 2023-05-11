@@ -38,7 +38,7 @@
     margin: 0 auto;
     border-radius: 50%;
     margin-bottom: 10px;
-    background: url('../images/ic-main.png') no-repeat  -50px 0px;
+    background: url('../images/ic-main.png') no-repeat -50px 0px;
     background-color: #fff;
     content: '';
 }
@@ -123,7 +123,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url("../images/sp-common.png") no-repeat -237px -284px;
+    background-position: -237px -284px;
     vertical-align: top;
     content: '';
 }
@@ -137,7 +137,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url("../images/sp-common.png") no-repeat -283px -284px;
+    background-position: -283px -284px;
     vertical-align: top;
     content: '';
 }
@@ -145,7 +145,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url("../images/sp-common.png") no-repeat -269px -284px;
+    background-position: -269px -284px;
     vertical-align: top;
     content: '';
 }
@@ -158,7 +158,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url("../images/sp-common.png") no-repeat -255px -284px;
+    background-position: -255px -284px;
     vertical-align: top;
     content: '';
 }
@@ -961,7 +961,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url('../images/sp-common.png') no-repeat -45px -43px;
+    background-position: -45px -43px;
     vertical-align: top;
     content: '';
 }
@@ -976,7 +976,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url('../images/sp-common.png') no-repeat -65px -43px;
+    background-position: -65px -43px;
     vertical-align: top;
     content: '';
 }

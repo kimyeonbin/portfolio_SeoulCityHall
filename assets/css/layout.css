@@ -224,7 +224,7 @@
     font-size: 12px;
     line-height: 21px;
     appearance: none;
-    background: url('../images/ic-arrow-lang.png') no-repeat 96% center / 8px auto;
+    background: url('../images/ic-arrow-lang.png') 96% center / 8px auto no-repeat;
 }
 .header .lang-area option{
     text-align: left;
