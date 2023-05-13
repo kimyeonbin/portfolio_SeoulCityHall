@@ -32,7 +32,7 @@ $(function(){
                 };
             }
         }
-    })
+    });
     $('.main-slide .autoplay').click(function(){
         if($(this).hasClass('on')){
             mainSlide.autoplay.start();
@@ -40,12 +40,12 @@ $(function(){
             mainSlide.autoplay.stop();
         }
         $(this).toggleClass('on');
-    })
+    });
     $('.sc-visual .group-nav .btn-nav').click(function(){
         idx=$(this).data('index');
         $(this).addClass('active').siblings().removeClass('active');
         mainSlide.slideToLoop(idx);
-    })
+    });
     /**
      * @상단으로올라가는_버튼
      */
