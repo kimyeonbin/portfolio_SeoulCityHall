@@ -928,7 +928,6 @@
 
 
 
-
 .sc-banner{
     position: relative;
     padding: 50px 0 50px 0;
@@ -1012,8 +1011,6 @@
 
 
 
-
-
 .sc-related{
     position: relative;
     z-index: 1;
@@ -1062,7 +1059,6 @@
     transform: rotate(45deg);
     transform-origin: center center;
 }
-
 .sc-related .sub-area{
     display: none;
     position: absolute;
@@ -1082,4 +1078,3 @@
     margin-top: 10px;
     color: #555555;
 }
-
