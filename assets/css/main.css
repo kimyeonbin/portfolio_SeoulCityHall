@@ -1050,7 +1050,7 @@
     border-color: #373737;
     border-width: 0px 2px 2px 0px;
     transform: rotate(-135deg);
-    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all .3s;
     transform-origin: center center;
     content: '';
 }
