@@ -112,4 +112,4 @@ $(function(){
             $('.sc-related .btn-related').removeClass('on').siblings('.sub-area').slideUp();
         };
     });
-})
+});
