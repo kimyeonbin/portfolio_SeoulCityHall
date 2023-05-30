@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 
-:root {
+:root{
     --font-kr: 'Nanum Gothic', sans-serif;
     -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: 100%;
@@ -16,11 +16,11 @@
     color: inherit;
     line-height: 1.35em;
 }
-*, :after, :before {
+*, :after, :before{
     box-sizing: border-box;
     flex-shrink: 0;
 }
-html, body {
+html, body{
     height: 100%;
 }
 ul{
