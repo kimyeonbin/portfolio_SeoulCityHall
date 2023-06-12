@@ -264,7 +264,6 @@
     padding-left: 0;
 }
 .footer .corp-list li+li::before{
-    content: '';
     position: absolute;
     top: 50%;
     left: 0;
@@ -272,6 +271,7 @@
     height: 14px;
     margin-top: -6px;
     background: #dcdcdc;
+    content: '';
 }
 .footer .corp-item:nth-child(2){
     font-size: 12px;
