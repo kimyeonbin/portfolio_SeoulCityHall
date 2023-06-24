@@ -44,7 +44,7 @@ table{
 input{
     background: transparent;
 }
-fieldset{
+input, fieldset{
     border: 0;
 }
 body{
