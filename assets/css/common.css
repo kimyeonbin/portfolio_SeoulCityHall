@@ -6,7 +6,6 @@
     clip: rect(0, 0, 0, 0);
     margin: -1px;
 }
-
 .sc-banner .control-wrap .btn.autoplay::after,
 .sc-banner .control-wrap .btn.prev::after,
 .sc-visual .control-wrap .btn.prev::before,
@@ -20,15 +19,46 @@
 .header .logo a::after{
     background: url('../images/sp-common.png') no-repeat;
 }
-
 .sc-service .group-title .more-area .link-story::before,
 .sc-service .group-title .more-area .link-festival::before{
     background: url('../images/event-logo.png') no-repeat;
     background-size: 80px;
 }
-
-
 .group-sns .headline::after,
 .group-sns .sns-item a::before{
     background: url('../images/sns-1.png') no-repeat;
+}
+.group-video a:focus,
+.sc-board .board-item a:focus,
+.sc-direct .direct-item a:focus,
+.sc-mayor .link-list .link-go:focus,
+.sc-mayor .link-mayor:focus,
+.sc-mayor .link-bg:focus,
+.sc-municipal a:focus:focus,
+.sc-covid .sub-area .link-all:focus,
+.sc-visual .group-nav .btn-nav:focus,
+.header .service-area a:focus,
+.sc-related .related-item .btn-related:focus{
+    outline: none;
+}
+.group-video a:focus-visible::after,
+.sc-board .board-item a:focus-visible::after,
+.sc-direct .direct-item a:focus-visible::after,
+.sc-mayor .link-list .link-go:focus-visible::after,
+.sc-mayor .link-mayor:focus-visible::before,
+.sc-mayor .link-bg:focus-visible::before,
+.sc-municipal a:focus-visible::before,
+.sc-covid .sub-area .link-all:focus-visible::before,
+.sc-visual .group-nav .btn-nav.news:focus-visible::after,
+.sc-visual .group-nav .btn-nav.citizen:focus-visible::after,
+.header .service-area a:focus-visible::after,
+.sc-related .related-item .btn-related:focus-visible::after{
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    border-radius: 4px;
+    z-index: 10;
+    content: '';
 }

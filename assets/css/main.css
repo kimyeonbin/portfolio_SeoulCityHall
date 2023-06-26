@@ -16,9 +16,14 @@
 }
 .sc-visual .group-nav .btn-nav{
     flex: 1;
+    position: relative;
     background: #d2e1e9;
     color: #222;
     font-weight: 600;
+}
+.sc-visual .group-nav .btn-nav.news:focus-visible::after,
+.sc-visual .group-nav .btn-nav.citizen:focus-visible::after{
+    border: 2px dashed #f00;
 }
 .sc-visual .group-nav .btn-nav.news::before{
     display: block;
@@ -60,13 +65,9 @@
     z-index: 10;
     content: '';
 }
-
-
-
 .sc-visual .main-slide{
     width: 690px;
 }
-
 .sc-visual .main-slide .swiper-slide a{
     display: block;
     position: relative;
@@ -86,9 +87,6 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-
-
-
 .sc-visual .control-wrap{
     display: flex;
     position: absolute;
@@ -131,7 +129,6 @@
     width: 20px;
     height: 20px;
     margin-left: 3px;
-    /* background: #00f; */
 }
 .sc-visual .control-wrap .btn.autoplay::after{
     display: inline-block;
@@ -152,7 +149,6 @@
 .sc-visual .control-wrap .btn.next{
     width: 20px;
     height: 20px;
-    /* background: #0f0; */
 }
 .sc-visual .control-wrap .btn.next::after{
     display: inline-block;
@@ -162,10 +158,6 @@
     vertical-align: top;
     content: '';
 }
-
-
-
-
 .column-right{
     display: grid;
     gap: 10px;
@@ -213,6 +205,7 @@
 .sc-covid .sub-area .link-all{
     display: flex;
     align-items: center;
+    position: relative;
     height: 21px;
     border-radius: 5px;
     padding: 0 2px 0 4px;
@@ -220,6 +213,9 @@
     font-size: 13px;
     color: #fff;
     background: #000;
+}
+.sc-covid .sub-area .link-all:focus-visible::before{
+    border: 2px dashed #f00;
 }
 .sc-covid .sub-area .link-all::after{
     width: 8px;
@@ -240,6 +236,9 @@
     display: block;
     width: 360px;
     height: 204px;
+}
+.sc-municipal a:focus-visible::before{
+    border: 2px dashed #f00;
 }
 .sc-municipal a::after{
     display: inline-block;
@@ -266,8 +265,6 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-
-
 .sc-mayor{
     position: relative;
 }
@@ -275,6 +272,9 @@
     display: block;
     width: 360px;
     height: 90px;
+}
+.sc-mayor .link-bg:focus-visible::before{
+    border: 2px dashed #f00;
 }
 .sc-mayor .link-bg::after{
     display: inline-block;
@@ -291,6 +291,9 @@
     right: 14px;
     width: 110px;
     height: 30px;
+}
+.sc-mayor .link-mayor:focus-visible::before{
+    border: 2px dashed #f00;
 }
 .sc-mayor .link-mayor::after{
     display: inline-block;
@@ -322,9 +325,12 @@
 .sc-mayor .link-list .link-item+.link-item{
     border-left: 1px solid #e6c298;
 }
-
-
-
+.sc-mayor .link-list .link-go{
+    position: relative;
+}
+.sc-mayor .link-list .link-go:focus-visible::after{
+    border: 2px dashed #f00;
+}
 .sc-service{
     position: relative;
     padding: 50px 0 0;
@@ -465,8 +471,6 @@
 .sc-service .service-item .ic-council::before{
     background-position: -600px 0;
 }
-
-
 .sc-direct{
     margin-top: 35px;
     background: #eff4f8;
@@ -477,18 +481,21 @@
     margin: 0 auto;
 }
 .sc-direct .direct-item{
+    position: relative;
     width: 230px;
     padding: 20px 0;
 }
 .sc-direct .direct-item a{
     display: block;
-    position: relative;
     width: 230px;
     height: 70px;
 }
-.sc-direct .direct-item a::after{
+.sc-direct .direct-item a:focus-visible::after{
+    border: 2px solid #000;
+}
+.sc-direct .direct-item i.bar{
     position: absolute;
-    top: 5px;
+    top: 25px;
     left: 0px;
     width: 1px;
     height: 60px;
@@ -538,8 +545,6 @@
     vertical-align: top;
     content: '';
 }
-
-
 .inner4{
     display: flex;
     gap: 36px;
@@ -558,12 +563,16 @@
     font-weight: 700;
 }
 .sc-board .board-item{
-    position: relative;
     padding: 6px 0 6px 0;
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.sc-board .board-item a{
+    position: relative;
+}
+.sc-board .board-item a:focus-visible::after{
+    border: 2px solid #000;
 }
 .sc-board .board-item .type{
     margin: 0 9px 0 0;
@@ -600,8 +609,6 @@
     vertical-align: top;
     content: '';
 }
-
-
 .sc-often .headline{
     font-size: 24px;
     padding-bottom: 5px;
@@ -632,13 +639,10 @@
     display: block;
     font-size: 15px;
     color: #333;
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-
 .sc-field{
     padding-top: 40px;
 }
@@ -727,11 +731,9 @@
     background: url('../images/ic-admin.png') no-repeat;
     content: '';
 }
-
-
 .sc-news{
     position: relative;
-    padding: 20px 0 30px;
+    padding: 20px 0 50px;
 }
 .sc-news .headline{ 
     padding: 0 0 20px 0;
@@ -754,8 +756,17 @@
     overflow: hidden;
     word-break: keep-all;
 }
-.sc-news .news-item img{
+.sc-news .news-item .img-box{
+    width: 100%;
+    height: 188px;
     margin-bottom: 15px;
+    overflow: hidden;
+}
+.sc-news .news-item .img-box:hover img{
+    transform: scale(1.1);
+}
+.sc-news .news-item img{
+    transition: 0.3s ease-in-out;
 }
 .sc-news .news-item .type{
     position: absolute;
@@ -791,8 +802,6 @@
     background-position: 0 -259px;
     color: #7d7d7d;
 }
-
-
 .sc-media{
     display: flex;
     padding-bottom: 50px;
@@ -802,15 +811,27 @@
     font-size: 24px;
     font-weight: 700;
 }
+.group-video a .img-box{
+    width: 100%;
+    height: 152px;
+    overflow: hidden;
+}
 .group-video a{
-    position: relative;
     display: block;
+    position: relative;
     width: 280px;
     height: 152px;
+}
+.group-video a:focus-visible::after{
+    border: 2px dashed #f00;
 }
 .group-video img{
     width: 280px;
     height: 152px;
+    transition: .3s ease-in-out;
+}
+.group-video img:hover{
+    transform: scale(1.1);
 }
 .group-video .desc{
     position: absolute;
@@ -827,8 +848,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-
 .group-news .headline{
     padding-bottom: 11px;
     font-size: 24px;
@@ -853,7 +872,6 @@
 .group-news .news-item .desc{
     color: #555;
 }
-
 .group-sns{
     position: relative;
     width: 350px;
@@ -893,7 +911,6 @@
     width: 276px;
     height: 40px;
     margin-left: -138px;
-    overflow: hidden;
 }
 .group-sns .sns-item a{
     display: block;
@@ -906,6 +923,14 @@
     height: 40px;
     vertical-align: top;
     content: '';
+}
+.group-sns .sns-item .ic-instar,
+.group-sns .sns-item .ic-facebook,
+.group-sns .sns-item .ic-twitter,
+.group-sns .sns-item .ic-blog,
+.group-sns .sns-item .ic-youtube,
+.group-sns .sns-item .ic-stroy{
+    position: relative;
 }
 .group-sns .sns-item .ic-instar::before{
     background-position: 0 0;
@@ -925,9 +950,6 @@
 .group-sns .sns-item .ic-stroy::before{
     background-position: -200px 0;
 }
-
-
-
 .sc-banner{
     position: relative;
     padding: 50px 0 50px 0;
@@ -947,7 +969,6 @@
     width: auto;
     margin-right: 6px;
 }
-
 .sc-banner .control-wrap .btn-box{
     display: flex;
 }
@@ -980,7 +1001,6 @@
     content: '';
 }
 .sc-banner .control-wrap .btn.autoplay.on{
-    /* background: #f00; */
     width: 20px;
     height: 20px;
     border: 1px solid #999;
@@ -1008,9 +1028,6 @@
     vertical-align: top;
     content: '';
 }
-
-
-
 .sc-related{
     position: relative;
     z-index: 1;
@@ -1027,12 +1044,15 @@
 }
 .sc-related .related-item .btn-related{
     display: block;
+    position: relative;
     width: 100%;
     padding: 16px 0;
     text-align: center;
     background: #f7f7f7;
 }
-
+.sc-related .related-item .btn-related:focus-visible::after{
+    border: 2px solid #000;
+}
 .sc-related .related-item .btn-related:not(.none) span{
     position: relative;
     padding-right: 20px;

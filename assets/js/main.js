@@ -1,8 +1,8 @@
 $(function(){
     // 사이트언어변경_버튼
     $('#langBtn').click(function(){
-        url = $('#langList').val();
-        location.href = url;
+        const url=$('#langList').val();
+        window.open(url);
     });
     // 메인비주얼_슬라이드
     const mainSlide = new Swiper('.main-slide',{
@@ -52,7 +52,7 @@ $(function(){
         };
     });
     $('.fix-btn .btn-top').click(function(){
-        window.scrollTo({top: 0,behavior: "smooth"});
+        window.scrollTo({top: 0, behavior: "smooth"});
     });
     // 하단배너_슬라이드
     const bannerSlide = new Swiper('.banner-slide',{
@@ -89,7 +89,7 @@ $(function(){
         $('.sc-related .btn-related').removeClass('on').siblings('.sub-area').slideUp();
         $(this).addClass('on').siblings('.sub-area').slideDown();
     });
-    $('.sc-related .sub-list li:first-child').keydown(function(e){
+    $('.sc-related .sub-list li:first-child, .sc-related .btn-related').keydown(function(e){
         keyCode = e.keyCode;
         if(keyCode === 9 && e.shiftKey){
             $('.sc-related .btn-related').removeClass('on').siblings('.sub-area').slideUp();
