@@ -214,6 +214,9 @@
     color: #fff;
     background: #000;
 }
+.sc-covid .sub-area .link-all:hover{
+    font-weight: 700;
+}
 .sc-covid .sub-area .link-all:focus-visible::before{
     border: 2px dashed #f00;
 }
@@ -265,11 +268,16 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.sc-municipal a:hover .desc{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 .sc-mayor{
     position: relative;
 }
 .sc-mayor .link-bg{
     display: block;
+    position: relative;
     width: 360px;
     height: 90px;
 }
@@ -282,6 +290,16 @@
     height: 90px;
     background: url('../images/mayor.png') no-repeat 0 0;
     vertical-align: top;
+    content: '';
+}
+.sc-mayor .link-bg:hover::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 10px;
     content: '';
 }
 .sc-mayor .link-mayor{
@@ -301,6 +319,16 @@
     height: 30px;
     background: url('../images/mayor-link.png') no-repeat 0 0;
     vertical-align: top;
+    content: '';
+}
+.sc-mayor .link-mayor:hover::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 10px;
     content: '';
 }
 .sc-mayor .link-list{
@@ -330,6 +358,11 @@
 }
 .sc-mayor .link-list .link-go:focus-visible::after{
     border: 2px dashed #f00;
+}
+.sc-mayor .link-list .link-go:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 .sc-service{
     position: relative;
@@ -414,6 +447,15 @@
     line-height: 28px;
     background: url('../images/ic-all.png') no-repeat right 13px top 50%;
 }
+.sc-service .link-all:hover::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .1);
+    content: '';
+}
 .sc-service .service-list{
     display: flex;
     justify-content: space-between;
@@ -425,6 +467,11 @@
     align-items: center;
     text-align: center;
     font-size: 15px;
+}
+.sc-service .service-item a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 .sc-service .service-item a::before{
     display: inline-block;
@@ -487,8 +534,19 @@
 }
 .sc-direct .direct-item a{
     display: block;
+    position: relative;
     width: 230px;
     height: 70px;
+}
+.sc-direct .direct-item a:hover::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    content: '';
 }
 .sc-direct .direct-item a:focus-visible::after{
     border: 2px solid #000;
@@ -571,6 +629,10 @@
 .sc-board .board-item a{
     position: relative;
 }
+.sc-board .board-item a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 .sc-board .board-item a:focus-visible::after{
     border: 2px solid #000;
 }
@@ -609,6 +671,15 @@
     vertical-align: top;
     content: '';
 }
+.sc-board .link-more:hover::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .1);
+    content: '';
+}
 .sc-often .headline{
     font-size: 24px;
     padding-bottom: 5px;
@@ -643,6 +714,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.sc-often .often-item a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 .sc-field{
     padding-top: 40px;
 }
@@ -667,6 +743,11 @@
     width: 85px;
     font-size: 16px;
     text-align: center;
+}
+.sc-field .info-item .info:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 .sc-field .info-item .ic-house::before{
     display: inline-block;
@@ -756,6 +837,9 @@
     overflow: hidden;
     word-break: keep-all;
 }
+.sc-news .news-item a:hover .desc{
+    color: #0158a8;
+}
 .sc-news .news-item .img-box{
     width: 100%;
     height: 188px;
@@ -801,6 +885,10 @@
     font-size: 15px;
     background-position: 0 -259px;
     color: #7d7d7d;
+}
+.sc-news .link-all:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 .sc-media{
     display: flex;
@@ -869,6 +957,13 @@
     margin-right: 18px;
     color: #09ac43;
 }
+.group-news a.tab:hover{
+    font-weight: 700;
+}
+.group-news a.desc:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
 .group-news .news-item .desc{
     color: #555;
 }
@@ -881,8 +976,19 @@
 }
 .group-sns .sub-area{
     display: block;
+    position: relative;
     width: 350px;
     height: 195px;
+}
+.group-sns .sub-area:hover::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    content: '';
 }
 .group-sns .headline{
     position: absolute;
@@ -914,6 +1020,7 @@
 }
 .group-sns .sns-item a{
     display: block;
+    position: relative;
     width: 40px;
     height: 40px;
 }
@@ -924,13 +1031,32 @@
     vertical-align: top;
     content: '';
 }
-.group-sns .sns-item .ic-instar,
-.group-sns .sns-item .ic-facebook,
-.group-sns .sns-item .ic-twitter,
-.group-sns .sns-item .ic-blog,
-.group-sns .sns-item .ic-youtube,
-.group-sns .sns-item .ic-stroy{
-    position: relative;
+.group-sns .sns-item a:hover::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    content: '';
+}
+.group-sns .sns-item .ic-instar:hover::after{
+    border: 2px dashed #0f0;
+}
+.group-sns .sns-item .ic-facebook:hover::after{
+    border: 2px dashed #f00;
+}
+.group-sns .sns-item .ic-twitter:hover::after{
+    border: 2px dashed #f00;
+}
+.group-sns .sns-item .ic-blog:hover::after{
+    border: 2px dashed #f00;
+}
+.group-sns .sns-item .ic-youtube:hover::after{
+    border: 2px dashed #0f0;
+}
+.group-sns .sns-item .ic-stroy:hover::after{
+    border: 2px dashed #ff4ade;
 }
 .group-sns .sns-item .ic-instar::before{
     background-position: 0 0;
@@ -1050,6 +1176,9 @@
     text-align: center;
     background: #f7f7f7;
 }
+.sc-related .related-item .btn-related:hover{
+    background: #ededed;
+}
 .sc-related .related-item .btn-related:focus-visible::after{
     border: 2px solid #000;
 }
@@ -1097,4 +1226,9 @@
     width: 25%;
     margin-top: 10px;
     color: #555555;
+}
+.sc-related .sub-area .sub-list li a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
