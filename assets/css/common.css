@@ -35,7 +35,6 @@
 .sc-mayor .link-bg:focus,
 .sc-municipal a:focus:focus,
 .sc-covid .sub-area .link-all:focus,
-.sc-visual .group-nav .btn-nav:focus,
 .header .service-area a:focus,
 .sc-related .related-item .btn-related:focus{
     outline: none;
@@ -47,8 +46,6 @@
 .sc-mayor .link-bg:focus-visible::before,
 .sc-municipal a:focus-visible::before,
 .sc-covid .sub-area .link-all:focus-visible::before,
-.sc-visual .group-nav .btn-nav.news:focus-visible::after,
-.sc-visual .group-nav .btn-nav.citizen:focus-visible::after,
 .header .service-area a:focus-visible::after,
 .sc-related .related-item .btn-related:focus-visible::after{
     position: absolute;
