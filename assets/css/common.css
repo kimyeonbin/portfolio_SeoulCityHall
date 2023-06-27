@@ -29,7 +29,6 @@
     background: url('../images/sns-1.png') no-repeat;
 }
 .group-video a:focus,
-.sc-board .board-item a:focus,
 .sc-direct .direct-item a:focus,
 .sc-mayor .link-list .link-go:focus,
 .sc-mayor .link-mayor:focus,
@@ -42,7 +41,6 @@
     outline: none;
 }
 .group-video a:focus-visible::after,
-.sc-board .board-item a:focus-visible::after,
 .sc-direct .direct-item a:focus-visible::after,
 .sc-mayor .link-list .link-go:focus-visible::after,
 .sc-mayor .link-mayor:focus-visible::before,

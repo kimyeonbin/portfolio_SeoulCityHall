@@ -441,6 +441,7 @@
 }
 .fix-btn .btn-top{
     display: block;
+    position: relative;
     width: 34px;
     height: 34px;
     opacity: 0;
@@ -456,8 +457,15 @@
     vertical-align: top;
     content: '';
 }
-.fix-btn .btn-top:hover::after{
-    background: url('../images/btn-top-hover.png') no-repeat 0 0;
+.fix-btn .btn-top:hover::before{
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    border: 2px dashed #fff;
+    border-radius: 50%;
+    content: '';
 }
 .fix-btn .btn-top.show{
     opacity: 1;
