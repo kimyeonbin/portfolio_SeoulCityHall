@@ -113,10 +113,22 @@
     justify-content: center;
     align-items: center;
 }
+.sc-visual .control-wrap .btn{
+    position: relative;
+}
+.sc-visual .control-wrap .btn:hover:after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 7, 7, 0.377);
+    border-radius: 4px;
+    content: '';
+}
 .sc-visual .control-wrap .btn.prev{
     width: 20px;
     height: 20px;
-    /* background: #0f0; */
 }
 .sc-visual .control-wrap .btn.prev::before{
     display: inline-block;
@@ -131,7 +143,7 @@
     height: 20px;
     margin-left: 3px;
 }
-.sc-visual .control-wrap .btn.autoplay::after{
+.sc-visual .control-wrap .btn.autoplay::before{
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -139,7 +151,7 @@
     vertical-align: top;
     content: '';
 }
-.sc-visual .control-wrap .btn.autoplay.on::after{
+.sc-visual .control-wrap .btn.autoplay.on::before{
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -151,7 +163,7 @@
     width: 20px;
     height: 20px;
 }
-.sc-visual .control-wrap .btn.next::after{
+.sc-visual .control-wrap .btn.next::before{
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -1108,6 +1120,7 @@
     display: flex;
 }
 .sc-banner .control-wrap .btn.prev{
+    position: relative;
     width: 20px;
     height: 20px;
     border: 1px solid #999;
@@ -1120,8 +1133,17 @@
     vertical-align: top;
     content: '';
 }
+.sc-banner .control-wrap .btn:hover::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .1);
+    content: '';
+}
 .sc-banner .control-wrap .btn.autoplay{
-    /* background: #0f0; */
+    position: relative;
     width: 20px;
     height: 20px;
     border: 1px solid #999;
@@ -1150,6 +1172,7 @@
     content: '';
 }
 .sc-banner .control-wrap .btn.next{
+    position: relative;
     width: 20px;
     height: 20px;
     border: 1px solid #999;
