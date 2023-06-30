@@ -81,11 +81,6 @@ $(function(){
         $(this).toggleClass('on');
     });
     // 하단연관사이트_버튼
-    $('html').click(function(e){
-        if($(e.target).parents('.sc-related').length < 1){
-            $('.sc-related .btn-related').removeClass('on').siblings('.sub-area').stop().slideUp();
-        };
-    });
     $('.sc-related .btn-related').click(function(){
         if($(this).hasClass('on')){
             $('.sc-related .btn-related').removeClass('on').siblings('.sub-area').stop().slideUp();
@@ -103,6 +98,11 @@ $(function(){
     $('.sc-related .sub-list li:last-child').keydown(function(e){
         keyCode = e.keyCode;
         if(keyCode === 9 && !e.shiftKey){
+            $('.sc-related .btn-related').removeClass('on').siblings('.sub-area').stop().slideUp();
+        };
+    });
+    $('html').click(function(e){
+        if($(e.target).parents('.sc-related').length < 1){
             $('.sc-related .btn-related').removeClass('on').siblings('.sub-area').stop().slideUp();
         };
     });
