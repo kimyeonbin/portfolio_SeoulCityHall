@@ -7,6 +7,8 @@ $(function(){
     // 메인비주얼_슬라이드
     const mainSlide = new Swiper('.main-slide',{
         loop: true,
+        observer: true,
+        observeParents: true,
         autoplay: {
             delay: 1700,
             disableOnInteraction: false
@@ -14,6 +16,11 @@ $(function(){
         navigation: {
             nextEl: '.next',
             prevEl: '.prev'
+        },
+        a11y: {
+            prevSlideMessage: '이전 슬라이드',
+            nextSlideMessage: '다음 슬라이드',
+            slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
         },
         pagination: {
             el: '.fraction',
@@ -66,6 +73,11 @@ $(function(){
         navigation: {
             nextEl: '.next',
             prevEl: '.prev'
+        },
+        a11y: {
+            prevSlideMessage: '이전 슬라이드',
+            nextSlideMessage: '다음 슬라이드',
+            slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
         },
         pagination: {
             el: '.fraction',
