@@ -84,7 +84,7 @@ $(function(){
     $('html').click(function(e){
         if($(e.target).parents('.sc-related').length < 1){
             $('.sc-related .btn-related').removeClass('on').siblings('.sub-area').stop().slideUp();
-        }
+        };
     });
     $('.sc-related .btn-related').click(function(){
         if($(this).hasClass('on')){
